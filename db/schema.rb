@@ -10,13 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_29_002626) do
+ActiveRecord::Schema.define(version: 2020_09_29_003552) do
 
-  create_table "users", force: :cascade do |t|
-    t.string "nombre"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.string "email"
-  end
+# Could not dump table "users" because of following StandardError
+#   Unknown type 'digest' for column 'password'
 
 end
